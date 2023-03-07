@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane prefHeight="475.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Demande.PopupInformation.detailControlleur">
+   <content>
+      <AnchorPane prefHeight="425.0" prefWidth="399.0">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="123.0" layoutX="144.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/image0.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="149.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Label layoutX="20.0" layoutY="178.0" prefHeight="27.0" prefWidth="101.0" text="Nom et prenom" textFill="#26bfbc">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="20.0" layoutY="205.0" prefHeight="27.0" prefWidth="139.0" text="Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="178.0" prefHeight="27.0" prefWidth="47.0" text="Email" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="231.0" layoutY="205.0" prefHeight="27.0" prefWidth="165.0" text="email">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="244.0" prefHeight="27.0" prefWidth="84.0" text="Adresse" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="contact" layoutX="20.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="contact">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="231.0" layoutY="244.0" prefHeight="27.0" prefWidth="84.0" text="grade" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="note" layoutX="231.0" layoutY="271.0" prefHeight="27.0" prefWidth="139.0" text="Note">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="304.0" prefHeight="27.0" prefWidth="119.0" text="Phone Number" textFill="#26bfbc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="phonenumber" layoutX="20.0" layoutY="331.0" prefHeight="27.0" prefWidth="139.0" text="contact">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="OK" />
+   </buttonTypes>
+</DialogPane>

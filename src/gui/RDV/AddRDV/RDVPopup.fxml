@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RDV.AddRDV.addRDVControlleur">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="236.0" prefWidth="509.0">
+         <children>
+            <DatePicker fx:id="date_Picker" layoutX="174.0" layoutY="90.0" onAction="#changedDate" prefHeight="28.0" prefWidth="187.0" />
+            <Text layoutX="47.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir une date">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <Label layoutX="155.0" layoutY="14.0" text="Faire un rendez-vous" textFill="#26bfbc">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="43.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir une heure">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="CB1" layoutX="185.0" layoutY="154.0" prefHeight="28.0" prefWidth="54.0" />
+            <ChoiceBox fx:id="CB2" layoutX="267.0" layoutY="154.0" prefHeight="28.0" prefWidth="54.0" />
+            <Text fx:id="erroraria" layoutX="174.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="195.13671875" />
+            <Button fx:id="buttonok" layoutX="107.0" layoutY="194.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="34.0" prefWidth="97.0" text="ok" />
+            <Button layoutX="280.0" layoutY="194.0" mnemonicParsing="false" onAction="#clickClose" prefHeight="34.0" prefWidth="97.0" text="close" />
+         </children>
+      </AnchorPane>
+   </content>
+</DialogPane>
